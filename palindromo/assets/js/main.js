@@ -6,8 +6,8 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
 
 ***********************************************************************************/
 
-// - (prompt) per chiedere all'utente una parola
-// - trovare il modo di scriverle al contrario
-// - trovare il modo di dire true se si legge al contrario
-// - inseriamo quello che serve nella (function)
-// - console.log positivo o negativo
+// 1 - (prompt) per chiedere all'utente una parola
+// 2 - trovare il modo di scriverle al contrario (fare array con reverse - split - join) 
+// 3 - trovare il modo di dire true se si legge al contrario (fare array con reverse - split - join)
+// 4 - inseriamo quello che serve nella (function)
+// 5 - console.log positivo o negativo
