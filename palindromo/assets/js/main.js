@@ -11,3 +11,20 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
 // 3 - trovare il modo di dire true se si legge al contrario (fare array con reverse - split - join)
 // 4 - inseriamo quello che serve nella (function)
 // 5 - console.log positivo o negativo
+
+const userWord = prompt('scrivi una parola');
+console.log(userWord);
+
+const splitWord = userWord.split('');
+console.log(splitWord);
+
+const reverseLetters = splitWord.reverse('');
+console.log(reverseLetters);
+
+const reverseUserWord = reverseLetters.join('');
+console.log(reverseUserWord);
+
+
+
+
+
