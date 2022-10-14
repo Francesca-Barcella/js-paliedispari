@@ -27,17 +27,35 @@ console.log('Il numero del computer è: ' + numberPc);
 //3 - faccio la somma dei numeri per vedere se è pari o dispari (% 2 == 0)
 const sum = numberPlayer + numberPc;
 console.log('la somma dei due numeri è: ' + sum);
-const result = (sum % 2 ==0);
-console.log(result);
+const isSumPari = (sum % 2 == 0);
+console.log(isSumPari);
 
-function pariDispari(number) {
-    if (result !== pariDispariUser) {
-        console.log('la somma è pari ed hai vinto tu');
+// function pariDispari(number) {
+//     if (result !== pariDispariUser) {
+//         console.log('hai vinto tu');
+//     } else {
+//         console.log('vinto il computer');
+//     }
+// }
+
+// pariDispari();
+
+function resultSum(){
+    if (isSumPari){
+        console.log('la somma è pari');
     } else {
-        console.log('la somma è dispari ed ha vinto il computer');
+        console.log('la somma è dispari');
     }
 }
 
-pariDispari();
+resultSum();
 
+function winner(){
+    if (resultSum == pariDispariUser){
+        console.log('hai vinto tu');
+    } else {
+        console.log('ha vinto il computer');
+    }
+}
 
+winner();
