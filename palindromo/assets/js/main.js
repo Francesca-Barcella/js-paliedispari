@@ -28,14 +28,30 @@ console.log(reverseLetters);
 const reverseUserWord = reverseLetters.join('');
 console.log(reverseUserWord);
 
+
 // 5 - console.log positivo o negativo
 // 3 - trovare il modo di dire true se si legge al contrario (fare array con reverse - split - join)
-if (userWord == reverseUserWord){
+/* if (userWord == reverseUserWord) {
     console.log('la tu parola è palindroma');
 } else {
     console.log('la tua parola non è palindroma');
-}
+} */
 
 // 4 - E MO CAPIRE COME STRUTTURARE SOTTO FORMA DI FUNZIONE
+
+function palindromo() {
+    if (userWord == reverseUserWord) {
+        console.log('la tu parola è palindroma');
+    } else {
+        console.log('la tua parola non è palindroma');
+    }
+}
+
+palindromo();
+
+
+
+
+
 
 
