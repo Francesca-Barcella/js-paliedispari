@@ -1,0 +1,1 @@
+alert('ciao, sei nella cartella pari e dispari!')
