@@ -28,6 +28,9 @@ console.log(reverseLetters);
 const reverseUserWord = reverseLetters.join('');
 console.log(reverseUserWord);
 
+let isPalindormo = userWord === reverseUserWord;
+console.log(isPalindormo);
+
 
 // 5 - console.log positivo o negativo
 // 3 - trovare il modo di dire true se si legge al contrario (fare array con reverse - split - join)
@@ -37,17 +40,44 @@ console.log(reverseUserWord);
     console.log('la tua parola non è palindroma');
 } */
 
-// 4 - E MO CAPIRE COME STRUTTURARE SOTTO FORMA DI FUNZIONE
 
-function palindromo() {
-    if (userWord == reverseUserWord) {
-        console.log('la tu parola è palindroma');
+//OPZIONE 1
+
+/**
+ * 
+ * @param {string} wordRight 
+ * @param {string} wordLeft 
+ */
+
+function palindromo(wordRight, wordLeft) {
+    if (wordRight == wordLeft) {
+        console.log('la tua parola è palindroma' + ' opzione 1');
     } else {
-        console.log('la tua parola non è palindroma');
+        console.log('la tua parola non è palindroma' + ' opzione 1');
     }
 }
 
-palindromo();
+palindromo(userWord, reverseUserWord);
+
+
+//OPZIONE 2
+function checkPalindrome (checkPalindrome){
+
+    let palindrome = '';
+
+    if (checkPalindrome){
+        palindrome = 'la tua parola è palindroma' + ' opzione 2';
+    } else {
+        palindrome = 'la tua parola non è palindroma' + ' opzione 2';
+
+    }
+
+    return palindrome;
+
+}
+
+const wordPalindrome = checkPalindrome(isPalindormo);
+console.log(wordPalindrome);
 
 
 
